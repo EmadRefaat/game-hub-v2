@@ -1,4 +1,5 @@
 import { Box, Grid, GridItem } from "@chakra-ui/react";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -20,13 +21,8 @@ function App() {
           base: 1,
           lg: 12,
         }}
-        bg="blue.500"
-        p={2}
-        height={10}
       >
-        <Box color="white" fontWeight="bold">
-          Navbar
-        </Box>
+        <Navbar />
       </GridItem>
 
       {/* Aside - 2 columns on large screens, hidden on mobile */}
