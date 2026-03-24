@@ -4,6 +4,7 @@ import { SimpleGrid, Text, Center } from "@chakra-ui/react";
 
 const GameGrid = () => {
   const { err, games } = useGames();
+  console.log(games);
   if (err) {
     return (
       <Center py={8}>
