@@ -1,6 +1,7 @@
 import { Box, Grid, GridItem } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import GameGrid from "./components/GameGrid";
+import GenreList from "./components/GenreList";
 
 function App() {
   return (
@@ -44,7 +45,9 @@ function App() {
         }}
         height="100%"
       >
-        <Box fontWeight="bold">Aside</Box>
+        <Box fontWeight="bold">
+          <GenreList />
+        </Box>
       </GridItem>
 
       {/* Main - 10 columns on large screens, full width on mobile */}
