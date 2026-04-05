@@ -49,7 +49,10 @@ function App() {
         height="100%"
       >
         <Box fontWeight="bold">
-          <GenreList onSelectGenre={(genre) => setSelectedGenre(genre)} />
+          <GenreList
+            onSelectGenre={(genre) => setSelectedGenre(genre)}
+            selectedGenre={selectedGenre}
+          />
         </Box>
       </GridItem>
 
