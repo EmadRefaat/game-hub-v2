@@ -7,6 +7,7 @@ import {
   Stack,
   Toast,
   createToaster,
+  type ToastOptions,
 } from "@chakra-ui/react"
 
 export const toaster = createToaster({
@@ -18,7 +19,7 @@ export const Toaster = () => {
   return (
     <Portal>
       <ChakraToaster toaster={toaster} insetInline={{ mdDown: "4" }}>
-        {(toast) => (
+        {(toast: ToastOptions) => (
           <Toast.Root width={{ md: "sm" }}>
             {toast.type === "loading" ? (
               <Spinner size="sm" color="blue.solid" />

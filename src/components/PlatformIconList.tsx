@@ -1,5 +1,5 @@
-import { HStack, Icon, Text } from "@chakra-ui/react";
-import { Platform } from "../hooks/useGames";
+import { HStack, Icon } from "@chakra-ui/react";
+import { Platform } from "../hooks/usePlatforms";
 import { FaPlaystation } from "react-icons/fa";
 import { TbDeviceDesktop } from "react-icons/tb";
 import { FaXbox } from "react-icons/fa";

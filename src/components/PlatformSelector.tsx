@@ -1,5 +1,4 @@
-import { Box, Button, Menu, Portal, Spinner, Text } from "@chakra-ui/react";
-import { LuChevronDown } from "react-icons/lu";
+import { Box, Button, Menu, Portal } from "@chakra-ui/react";
 import usePlatforms, { Platform } from "../hooks/usePlatforms";
 
 interface Props {
@@ -9,7 +8,7 @@ interface Props {
 const PlatformSelector = ({ onSelectPlatform, selectedPlatform }: Props) => {
   const { data, err, loading } = usePlatforms();
 
-  if (err) return "";
+  if (err) return null;
 
   return (
     <Box marginBottom="2">
