@@ -11,7 +11,7 @@ const PlatformSelector = ({ onSelectPlatform, selectedPlatform }: Props) => {
   if (err) return null;
 
   return (
-    <Box marginBottom="2">
+    <Box>
       <Menu.Root>
         <Menu.Trigger asChild>
           <Button variant="outline" size="sm">
