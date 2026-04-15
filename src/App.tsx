@@ -8,6 +8,7 @@ import PlatformSelector from "./components/PlatformSelector";
 import { Platform } from "./hooks/usePlatforms";
 import SortSelector from "./components/SortSelector";
 import SearchInput from "./components/SearchInput";
+import GameHeading from "./components/GameHeading";
 
 export interface GameQuery {
   genre: Genre | null;
@@ -84,6 +85,7 @@ function App() {
         height="100%"
       >
         <Box fontWeight="bold">
+          <GameHeading gameQuery={gameQuery} />
           <HStack marginBottom="8" spaceX="2">
             <PlatformSelector
               selectedPlatform={gameQuery.platform}
