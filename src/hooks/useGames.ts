@@ -19,6 +19,7 @@ const useGames = (gameQery: GameQuery) =>
         genres: gameQery.genre?.id,
         parent_platforms: gameQery.platform?.id,
         ordering: gameQery.sortOrder,
+        search: gameQery.searchText,
       },
     },
     [gameQery],
